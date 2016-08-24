@@ -25,6 +25,15 @@ class iscsi::params {
 
         }
 
+        'Debian': {
+
+            $initiator_packages = 'open-iscsi'
+            $initiator_services = 'iscsid'
+
+            $target_packages = 'iscsitarget'
+            $target_services = 'tgtd'
+
+        }
         default: {
             fail ("${title}: operating system '${::operatingsystem}' is not supported")
         }
