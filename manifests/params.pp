@@ -30,7 +30,7 @@ class iscsi::params {
             $initiator_packages = 'open-iscsi'
             $initiator_services = 'iscsi'
 
-            $target_packages = ['iscsitarget', 'tgt']
+            $target_packages = 'tgt'
             $target_services = 'tgt'
 
         }
