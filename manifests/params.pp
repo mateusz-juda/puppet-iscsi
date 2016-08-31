@@ -28,7 +28,7 @@ class iscsi::params {
         'Debian': {
 
             $initiator_packages = 'open-iscsi'
-            $initiator_services = 'iscsi'
+            $initiator_services = 'open-iscsi'
 
             $target_packages = 'tgt'
             $target_services = 'tgt'
